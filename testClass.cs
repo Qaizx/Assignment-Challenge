@@ -194,4 +194,7 @@ public class testClass
     [Fact]
     public void TestDeleteMultiple() => Assert.Equal("TUING", Program.OldPhonePad("*8 88777*444666*664#"));
 
+    [Fact]
+    public void TestDeleteMultiple2() => Assert.Equal("TING", Program.OldPhonePad("*8 88777**444666*664#"));
+
 }

@@ -26,9 +26,13 @@ namespace Main
                     // loop until you find a character that is unique to the one you want to delete.
                     while (checkChar == deleteChar)
                     {
-                        if (checkIndex > 0)
+                        if (checkIndex >= 0)
                         {
                             checkIndex--;
+                            if (checkIndex < 0)
+                            {
+                                break;
+                            }
                             checkChar = result[checkIndex];
                             count++;
                         }
@@ -38,6 +42,7 @@ namespace Main
                     result = result.Remove(checkIndex + 1, count);
                 }
             }
+
             return result;
 
         }
@@ -77,10 +82,10 @@ namespace Main
 
         static void Main(string[] args)
         {
-            string str = "8 88777444666*664#";
-            // Console.Write("Enter a string - ");
-            // string testString = Console.ReadLine();
-            Console.WriteLine(OldPhonePad(str));
+            // string str = "8 88777444666*664#";
+            Console.Write("Enter a string - ");
+            string input = Console.ReadLine();
+            Console.WriteLine(OldPhonePad(input));
         }
     }
 }
