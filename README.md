@@ -34,3 +34,21 @@
    ```
 
 # How to use the project
+1. Run this project
+2. Enter your sentence
+   1. if you forgot '#' in your sentence, this project will throw exception to notice that you forgot to put # in the sentence.
+   2. if your sentence have contains characters other than 0-9, *, or #, this project will throw exception to notice that you don't have contain any characters other than 0-9, *, or #.
+4. This project will convert your string
+   1. The number 1 represents the symbols &, ' and (
+   2. The number 2 represents the symbols A, B and C
+   3. The number 3 represents the symbols D, E and F
+   4. The number 4 represents the symbols G, H and I
+   5. The number 5 represents the symbols J, K and L
+   6. The number 6 represents the symbols M, N and O
+   7. The number 7 represents the symbols P, Q, R and S
+   8. The number 8 represents the symbols T, U and V
+   9. The number 9 represents the symbols W, X, Y and Z
+   10. The number 0 represents the space bar
+   11. The letter * represents the meaning of deleting the preceding letter.
+   12. The letter # will represent the meaning used to press send data.
+      1. The characters behind # will not be converted into any text.
