@@ -51,4 +51,20 @@
    10. The number 0 represents the space bar
    11. The letter * represents the meaning of deleting the preceding letter.
    12. The letter # will represent the meaning used to press send data.
-      1. The characters behind # will not be converted into any text.
+       1. The characters behind # will not be converted into any text.
+5. If you pressed the same number too much, the project will repeat the command.
+   1. "2#"      -> A
+   2. "22#"     -> B
+   3. "222#"    -> C
+   4. "2222#"   -> A
+   5. "22222#"  -> B
+   6. "222222#" -> C
+
+# Example
+1. "2#" -> A
+2. "33#" -> E
+3. "444#" -> I
+4. "7777#" -> S
+5. "4433555 555666#" -> HELLO
+6. "4433555 5550666#" -> HELL O
+7. "4433555 555*666#" -> HELO
